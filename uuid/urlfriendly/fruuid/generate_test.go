@@ -1,4 +1,4 @@
-package fruid
+package fruuid
 
 import (
 	"fmt"
