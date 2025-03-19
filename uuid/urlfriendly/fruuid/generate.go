@@ -49,7 +49,7 @@ func generate(n int, al string) (string, error) {
 
 	la := int64(len(al))
 	for c := range n {
-		bytes[c] = alpha[cryptoRandSecure(la)]
+		bytes[c] = al[cryptoRandSecure(la)]
 	}
 	return string(bytes), nil
 
