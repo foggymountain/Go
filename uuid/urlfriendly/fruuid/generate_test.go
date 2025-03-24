@@ -87,3 +87,21 @@ func TestGenerateWithAlpha(t *testing.T) {
 		})
 	}
 }
+
+func TestGenerateWithAl(t *testing.T) {
+	type gen []int
+
+	a := gen{1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+	Reverse(a)
+
+	fmt.Println(a)
+
+}
+
+func Reverse[Scene ~[]Q, Q any](s Scene) {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
+
+}
