@@ -64,8 +64,8 @@ func GenerateUnique(n int) (string, error) {
 
 // GenerateWithFormat generates a password with n words and a separator.
 // If upper is true, the first letter of each word is capitalized.
-func GenerateWithFormat(n int, sep string, upper bool) {
-	generateWithFormat(a, n, sep, upper)
+func GenerateWithFormat(n int, sep string, upper bool) (string, error) {
+	return generateWithFormat(a, n, sep, upper)
 }
 
 func generateWithFormat(d []string, n int, sep string, upper bool) (string, error) {
