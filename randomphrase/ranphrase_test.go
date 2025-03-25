@@ -1,6 +1,7 @@
 package randomphrase
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -52,13 +53,24 @@ func Test_alreadyUsed(t *testing.T) {
 
 func Test_NoRepeatInDictionary(t *testing.T) {
 	seen := make(map[string]bool)
-	for _, str := range a {
+	fmt.Printf("Dictionary length: %v\n", len(dict))
+	for _, str := range dict {
 		if seen[str] {
 			t.Errorf("Duplicate word in dictionary: '%v'", str)
 			t.FailNow()
 		}
 		seen[str] = true
 	}
+}
+
+func Test_CodeSpace(t *testing.T) {
+	l := len(dict)
+	f1, err := CodeSpace(0)
+	assert.Nil(t, err)
+	assert.Equal(t, l, f1)
+
+	f2, _ := CodeSpace(1)
+	assert.Equal(t, l, f2)
 }
 
 func Test_GenerateWithFormat(t *testing.T) {
@@ -82,8 +94,8 @@ func Test_build(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := len(build(a, tt.args.l, false)); got != tt.result {
-				tt.result = len(build(a, tt.args.l, false))
+			if got := len(build(dict, tt.args.l, false)); got != tt.result {
+				tt.result = len(build(dict, tt.args.l, false))
 				t.Errorf("build() = %v, want %v", got, tt.result)
 
 			}

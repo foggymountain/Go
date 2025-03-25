@@ -1,0 +1,31 @@
+package randomphrase
+
+// Dictionary of words.
+var dict = []string{
+	"apple", "anaconda", "almost", "above", "alone", "allied", "abandon", "abide", "ability", "able", "abrupt", "absolute", "abstract", "abundant", "academic", "accelerate", "acceptance", "accomplish", "accurate", "azure",
+	"bath", "bed", "beyond", "brought", "banana", "brave", "battery", "bakery", "bison", "behold", "bumps", "boiled", "butter", "butterfly",
+	"cat", "cucumber", "cook", "cake", "code", "cauldron", "crave", "cave",
+	"dog", "day", "date", "drain", "door", "donut", "daily", "degree", "draw",
+	"elephant", "equal", "elegant", "einstein", "equinox", "element", "east", "each", "ears", "earth",
+	"figure", "face", "foot", "flake", "frosty", "forge", "found",
+	"giraffe", "green", "grass", "ghost", "grapes",
+	"help", "hospital", "home", "hologram", "horse", "hooked",
+	"ingot", "input", "infant", "item", "internal", "inward", "invent",
+	"jazz", "justice", "juicy", "junior", "jack", "jail", "jelly", "jigsaw", "jolt", "jolly", "jungle", "jupiter",
+	"kangaroo", "keen", "knee", "knight", "knot",
+	"lost", "limited", "lazy", "lance", "leap", "lunar", "luminous", "lucky", "lucid",
+	"mango", "many", "madrigal", "meerkat", "magic", "mystic", "mystery", "mercury", "mars",
+	"never", "north", "norway", "nacent", "noble", "nifty", "noodle", "nose", "neptune",
+	"operation", "open", "output", "origin", "orange", "ocean", "octopus", "over",
+	"plum", "problem", "police", "pickle", "pine", "palm", "pass", "panic", "points", "power", "pluto",
+	"quench", "quartz", "quack", "quasar", "quite", "quotidian",
+	"ranch", "really", "recalcitrant", "reticent", "redolent",
+	"sport", "space", "south", "staple", "slant", "string", "solar", "speak", "share", "swim", "stops", "saturn", "sun",
+	"truth", "tango", "trench", "talent", "taciturn", "tautology", "tincture", "trains",
+	"umbrella", "unusual", "under", "utmost", "uptick", "unreal",
+	"violin", "verb", "verge", "valiant", "voter", "visit", "venus",
+	"weather", "wheels", "wet", "wash", "wonder", "windows", "west", "wheat", "waste", "waters", "wants", "wool", "weeks",
+	"xylophone", "xray", "xanadu", "xenophobic",
+	"yet", "yarn", "yielding", "yesterday", "young", "yodel", "yonder", "yoga", "yogurt", "yolk", "youth", "yummy", "yeast",
+	"zeal", "zebra", "zoo", "zoom", "zinc", "zone", "zero", "zest", "zany", "zombie", "zygote",
+}
